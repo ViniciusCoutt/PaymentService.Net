@@ -8,7 +8,7 @@ namespace PaymentService.Entities
 {
     internal class Contract
     {
- 
+
         public int Number { get; set; }
         public DateTime Date { get; set; }
         public double TotalValue { get; set; }
@@ -19,7 +19,7 @@ namespace PaymentService.Entities
         {
             Number = number;
             Date = date;
-            TotalValue = totalValue;       
+            TotalValue = totalValue;
             Installments = new List<Installment>();
         }
 

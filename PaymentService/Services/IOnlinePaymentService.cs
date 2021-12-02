@@ -8,13 +8,11 @@ namespace PaymentService.Services
 {
     internal interface IOnlinePaymentService
     {
+        public abstract double PaymentFee(double amount);
 
         public abstract double Interest(double amount, int months);
 
-        public abstract double PaymentFee(double amount);
 
 
-
-    
     }
 }

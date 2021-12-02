@@ -22,12 +22,10 @@ Contract contract = new Contract(number, date, value);
 ContractService contractService = new ContractService(new PaypalService());
 contractService.ProcessContract(contract, instMonths);
 
-
 Console.WriteLine("Installments: ");
-foreach(Installment installment in contract.Installments)
+foreach (Installment installment in contract.Installments)
 {
     Console.WriteLine(installment);
-
 }
 
 
